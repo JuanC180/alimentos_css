@@ -163,7 +163,6 @@ body{
 }
 }
 .banner__texto{
-    /* font-family: "Lato", sans-serif; */
     font-family: var(--fuente-secundaria);
     font-weight: 400;
     font-style: normal;
@@ -212,7 +211,6 @@ body{
         margin-bottom: 50px;
         font-family: var(--fuente-principal);
         font-weight: 900;
-        /* font-style: normal; */
         font-size: var(--titulo-secundario);
     }
 }
@@ -221,7 +219,6 @@ body{
         margin-bottom: 50px;
         font-family: var(--fuente-principal);
         font-weight: 900;
-        /* font-style: normal; */
         font-size: var(--titulo-secundario);
     }
 }
@@ -318,7 +315,6 @@ body{
         margin-bottom: 50px;
         font-family: var(--fuente-principal);
         font-weight: 900;
-        /* font-style: normal; */
         font-size: var(--titulo-secundario);
     }
 }
@@ -327,7 +323,6 @@ body{
         margin-bottom: 50px;
         font-family: var(--fuente-principal);
         font-weight: 900;
-        /* font-style: normal; */
         font-size: var(--titulo-secundario);
     }
 }
@@ -406,7 +401,6 @@ body{
         margin-bottom: 50px;
         font-family: var(--fuente-principal);
         font-weight: 900;
-        /* font-style: normal; */
         font-size: var(--titulo-secundario);
     }
 }
@@ -415,7 +409,6 @@ body{
         margin-bottom: 50px;
         font-family: var(--fuente-principal);
         font-weight: 900;
-        /* font-style: normal; */
         font-size: var(--titulo-secundario);
     }
 }
@@ -474,7 +467,6 @@ body{
             margin-bottom: 50px;
             font-family: var(--fuente-principal);
             font-weight: 900;
-            /* font-style: normal; */
             font-size: var(--titulo-secundario);
         }
     }
@@ -483,7 +475,6 @@ body{
             margin-bottom: 50px;
             font-family: var(--fuente-principal);
             font-weight: 900;
-            /* font-style: normal; */
             font-size: var(--titulo-secundario);
         }
     }
@@ -548,23 +539,238 @@ body{
 .section__contacto{}
 .section__contacto__contenedor{
     max-width: 1200px;
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    box-shadow: 5px 7px 60px  rgb(209, 209, 209);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
     grid:40px;
 
+}
+@media (width > 720px){
+    .section__contacto__contenedor{
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        box-shadow: 16px 16px 30px rgb(209, 209, 209);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
 }
 .section__contacto__imagen{
     background-image: url(../img/asesor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.section__contacto__formulario{}
+@media (width > 720px){
+    .section__contacto__imagen{
+        background-position: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
+.section__contacto__formulario{
+    padding: 30px;
+}
+@media(width > 720px){
+    .section__contacto__formulario{
+        border-top-right-radius: 10px;
+
+    }
+}
+
+.section__contacto__titulo-principal{
+
+    font-family: var(--fuente-principal);
+    font-weight: 900;
+    font-size: var(--titulo-secundario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(width < 400px){
+    .section__contacto__titulo-principal{
+        font-size: 40px;
+    }
+}
+
+.btn-enviar{
+    height: 50px;
+    background-color: rgba(75, 136, 50, 0.685);
+    border-color: rgba(75, 136, 50, 0.685) !important;
+}
+.btn-enviar:active{
+    background-color: rgba(75, 136, 50, 0.685) !important;
+}
+.btn-enviar:focus-visible{
+    background-color: rgba(75, 136, 50, 0.685);
+}
+.btn-enviar:hover{
+    background-color: rgba(60, 94, 47, 0.685);
+}
+
+.btn-margin{
+    margin-top: 10px;
+}
+
+
+.tbn-whatsapp{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.tbn-whatsapp:hover{
+    background-color: #1c723c;
+}
+
+.tbn-whatsapp__texto{}
+
+.tbn-whatsapp__icono{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/whatsapp.svg);
+    background-size:cover;
+}
+
+.tbn-whatsapp__icono:hover{
+
+    cursor: pointer;
+    border-radius: 50%;
+    /* filter: drop-shadow(0px 0px 5px green); */
+
+}
+
+
+
+
+
 
 
 /* =========================== CSS PAGINA CONTACTO FIN ======================================== */
+
+
+
+
+
+
+/* =========================== CSS PAGINA PRODUCTO  ======================================== */
+
+.section__productos{
+    background-color: #f0f0f0;
+    padding-bottom: 50px;
+}
+.section__producto-titulo{
+    font-family: var(--fuente-principal);
+    font-weight: 900;
+    font-size: var(--titulo-secundario);
+    text-align: center;
+    padding: 30px 0 10px 0;
+
+}
+.contenedor_cards{
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    justify-items: stretch;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+
+}
+@media (width > 720px){
+    .contenedor_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (width > 1080px){
+    .contenedor_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.card{
+    width: 320px;
+    /* background-color: rgba(231, 231, 231, 0.849); */
+    background-color: white;
+    /* box-shadow: 0px 0px 3px black; */
+    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.05);
+    /* transition: 1s; */
+    overflow: hidden;
+    border: none;
+    border-color: transparent;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.card:hover{
+    /* scale: 1.03;  */
+    /* transition: 1s;     */
+}
+
+.card__imagen{
+    transition: 1s;
+    height: 50%;
+}
+.card__imagen:hover{
+    scale: 1.09;
+    transition: 1s;  
+}
+.card__imagen img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card__texto{
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    font-size: 20px;
+    /* line-height: 20px; */
+    margin: 20px;
+    text-align: left;
+}
+.card__precio-signo{
+    font-family: var(--fuente-principal);
+    font-size: 30px;
+    font-weight: 900;
+    color: #c5c2c2;
+}
+.card__precio{
+    font-family: var(--fuente-principal);
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #1c723c;
+}
+
+
+
+
+/* =========================== CSS PAGINA PRODUCTO FIN ======================================== */
 
 
 
@@ -577,7 +783,6 @@ body{
     background-color: black;
     padding-top: 30px;
     padding-bottom: 30px;
-    /* height: 100; */
     display: flex;
     align-items: center;
 }
@@ -597,8 +802,8 @@ body{
 }
 
 .footer__texto{
-    /* text-align: justify; */
     margin-left: 30px;
+    font-size: 12px;
 }
 .footer__iconos{
     display: flex;
@@ -669,12 +874,12 @@ body{
     color: #fff;
     margin: 0;
     font-family: var(--fuente-principal);
-    font-size: larger;
+    font-size: 15px;
 }
 .footer__copyright{
     color: #fff;
     margin: 20px 0;
     margin-bottom: 0px;
     font-family: var(--fuente-principal);
-    
+    font-size: 14px;
 }

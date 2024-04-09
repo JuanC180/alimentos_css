@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto - Five alimentos</title>
+    <meta name="description" content="AQUI">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,12 +15,12 @@
                 <nav class="nav">
                     
                     <div class="nav__logo">
-                        <img class="nav__logo__img" src="img/logo.png">
+                        <img class="nav__logo__img" src="img/logo.png" alt="logo">
                     </div>
 
                     
                     <!-- <button class="nav__mostrar__menu" id="nav__desplegar__menu"> -->
-                        <img class="nav__mostrar__menu" id="nav__desplegar__menu" src="img/menu.png" width="30px">
+                        <img class="nav__mostrar__menu" id="nav__desplegar__menu" src="img/menu.png" width="30px" alt="icono-menu">
                     <!-- </button> -->
                     
                     <div class="nav__elementos">
@@ -44,7 +45,6 @@
 
         <main>
             <div class="banner">
-                <!-- <img class="banner__imagen" src="img/banner.jpg" > -->
                 <div class="contenedor">
                     <div class="banner__contenedor">
                         <h1 class="banner__titulo"><span class="banner__five">Five</span> Alimentos Empacados</h1>
@@ -54,6 +54,7 @@
             </div>
 
             <section class="section__contacto">
+                <h2 class="section__contacto__titulo-principal">Contactanos</h2>
                 <div class="section__contacto__contenedor ">
                     <div class="section__contacto__imagen">
                         
@@ -61,37 +62,33 @@
                     <div class="section__contacto__formulario">
 
                         <form action="">
-                            <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombres</label>
+                            <div class="mb-2">
                                 <input type="text" class="form-control" id="nombre" placeholder="Nombres">
                             </div>
-                            <div class="mb-3">
-                                <label for="correo" class="form-label">Correo</label>
+                            <div class="mb-2">
                                 <input type="email" class="form-control" id="correo" placeholder="Correo">
                             </div>
-                            <div class="mb-3">
-                                <label for="telefono" class="form-label">Email address</label>
+                            <div class="mb-2">
                                 <input type="number" class="form-control" id="telefono" placeholder="Teléfono">
                             </div>
-                            <div class="mb-3">
-                                <label for="comentario" class="form-label">Comentario</label>
-                                <textarea class="form-control" id="comentario" rows="3" placeholder="Comentario"></textarea>
+                            <div class="mb-2">
+                                <textarea class="form-control" id="comentario" rows="4" placeholder="Comentario"></textarea>
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">Button</button>
-                                <button class="btn btn-primary" type="button">Button</button>
+                                <button class="btn btn-primary btn-enviar btn-margin" type="submit">Enviar</button>
                             </div>
-
-                            <!-- <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-primary" type="button">Button</button>
-                                <button class="btn btn-primary" type="button">Button</button>
-                            </div> -->
                         </form>
 
                         
                     </div>
                 </div>
             </section>
+
+            <div class="tbn-whatsapp">
+                <a href="https://web.whatsapp.com/send?phone=573153646529&text=holaaa">
+                    <div class="tbn-whatsapp__icono "></div>
+                </a>
+            </div>
 
         </main>
 
@@ -101,29 +98,26 @@
                 <div class="footer__contenedor">
                     <div class="footer__informacion">
                         <div class="footer__logo">
-                            <img class="footer__logo__img" src="img/logo.png">
+                            <img class="footer__logo__img" src="img/logo.png" alt="logo-footer">
                         </div>
                         <div class="footer__texto">
                             <p class="footer__descripcion--color">
                                 <p class="footer__descripcion__texto">Teléfono: +57(305) 000 00 00</p>
                                 <p class="footer__descripcion__texto">Correo: alimentos@gmail.com</p>
                                 <p class="footer__descripcion__texto">Dirección: calle 7 sur 44 - 52</p>
-                                <p class="footer__descripcion__texto">Cuidad: Medellín</p>
-                                
-                                
-                                
+                                <p class="footer__descripcion__texto">Cuidad: Medellín</p> 
                             </p>
                         </div>
                     </div>
                     <div class="footer__iconos">
                         <a href="#">
-                            <img class="footer__iconos--width" src="img/logo_facebook.png">
+                            <img class="footer__iconos--width" src="img/logo_facebook.png" alt="logo-facebook">
                         </a>
                         <a href="#">
-                            <img class="footer__iconos--width" src="img/logo_instagram.png">
+                            <img class="footer__iconos--width" src="img/logo_instagram.png" alt="logo-instagram">
                         </a>
                         <a href="#">
-                            <img class="footer__iconos--width" src="img/logo_x2.png">
+                            <img class="footer__iconos--width" src="img/logo_x2.png" alt="logo-x">
                         </a>
                     </div>
                 </div>
